@@ -12,16 +12,43 @@ a {
 }
 
 // Headers
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
+h1 {
+  font-size: 76px;
+  font-family: $openSans;
+  color: $primary;
+}
+h2 {
+  font-size: 66px;
+  font-family: $openSans;
+  color: $primary;
+}
+h3 {
+  font-size: 56px;
+  font-family: $openSans;
+  color: $primary;
+}
+h4 {
+  font-size: 46px;
+  font-family: $openSans;
+  color: $primary;
+}
+h5 {
+  font-size: 36px;
+  font-family: $openSans;
+  color: $primary;
+}
+h6 {
+  font-size: 26px;
+  font-family: $openSans;
+  color: $primary;
+}
 
 // Body Copy
 p, ul, ol, li {
   margin-bottom: 15px;
+  font-size: 22px;
+  font-family: $openSans;
+  color: $gray;
 }
 
 // Media Queries

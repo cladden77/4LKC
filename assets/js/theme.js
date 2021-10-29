@@ -19,6 +19,12 @@ jQuery( document ).ready(function( $ ) {
 	// Nifty Nav
   $('#nifty-nav-toggle').niftyNav();
 
+	// Nifty click actions for sub menus
+$('.nifty-panel .menu-item-has-children').click(function(){
+	$(this).toggleClass('open');
+	$(this).find('.sub-menu').first().slideToggle();
+});
+
 	// Social Menu
 	$('.menu-social li a').text('');
 

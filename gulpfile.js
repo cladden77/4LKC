@@ -22,7 +22,8 @@ var phpFiles     = ['./**/*.php', './*.php'],
       './assets/js/*.js',
       '!./assets/js/font-awesome.config.js',
       '!./assets/js/theme.min.js',
-      '!./assets/js/all.js'
+      '!./assets/js/all.js',
+      '!./assets/js/jquery.min.js'
     ],
     url          = '4lkc.local'; // See https://browsersync.io/docs/options/#option-proxy
 
