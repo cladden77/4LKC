@@ -34,6 +34,7 @@ $btn = get_sub_field('button');
             $alt_text = get_post_meta($img_id , '_wp_attachment_image_alt', true);
             $img_link_selection = get_sub_field('image_link');
             $img_link = get_sub_field('link');
+            $title = get_sub_field('title');
             $text = get_sub_field('text');
 
           ?>
@@ -41,6 +42,11 @@ $btn = get_sub_field('button');
               <?php if ($img_link_selection) : ?><a href="<?php echo esc_url($img_link['url']); ?>" role="link"><?php endif; ?>
                 <div class="col-wrap">
                   <img src="<?php echo $img[0]; ?>" alt="<?php echo $alt_text; ?>" />
+
+                  <?php if($title) : ?>
+                  <h3><?php echo $title; ?></h3>
+                  <?php endif; ?>
+                  
                   <?php echo $text; ?>
                 </div>
               <?php if ($img_link_selection) : ?></a><?php endif; ?>

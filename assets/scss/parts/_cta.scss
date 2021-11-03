@@ -2,12 +2,41 @@
   CTA
 ------------------------------------------------------------------------------*/
 .cta {
+  margin: rem(100) auto;
+  padding-left: rem(50);
+  padding-right: rem(50);
+  max-height: 500px;
+
+  h2 {
+    color: $white;
+    font-size: 62px;
+  }
+
+  &__content-img {
+    bottom: 100px;
+
+    img {
+      max-height: 600px;
+    }
+  }
+
+  .button--outline {
+  &:hover {
+    color: $secondary !important;
+ }
+}
 
 }
 
 // Media Queries
 @media screen and (max-width:$small-breakpoint) {
   .cta {
-    
+    h2 {
+      font-size: 42px;
+    }
+
+    &__content-img {
+      bottom: 0;
+    }
   }
 }

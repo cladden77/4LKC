@@ -11,9 +11,9 @@
           wp_nav_menu( array('theme_location' => 'footer', 'container' => 'nav', 'container_class' => 'footer-nav') );
         ?>
       </div>
-      <div class="col-6 text-right sm-col-10 sm-col-centered">
+      <div class="col-6 text-left sm-col-10 sm-col-centered">
         <a href="<?php echo home_url(); ?>">
-          <img class="footer__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/logo--white.svg" alt="Malkin Creative" />
+          <img class="footer__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/logo--white.svg" alt="4L Foundation" />
         </a>
         <?php // Footer Social Menu
           wp_nav_menu( array('theme_location' => 'social', 'container' => 'nav', 'container_class' => 'menu-social') );
@@ -23,11 +23,8 @@
   </section>
   <section class="container footer footer--copywright">
     <div class="row">
-      <!-- Footer Copywright and Credit here -->
-      <div class="col-6 sm-col-12 sm-text-center">
-        <h5>Created by <a href="https://malkincreative.com">Malkin Creative</a></h5>
-      </div>
-      <div class="col-6 sm-col-12 sm-text-center footer--copywright__wrap text-right">
+      <!-- Footer Copywright and social-->
+      <div class="col-6 sm-col-12 sm-text-center footer--copywright__wrap text-left">
         <h5 class="copyright">&copy; <?php echo date("Y"); ?> Business Name All Rights Reserved.</h5>
       </div>
     </div>

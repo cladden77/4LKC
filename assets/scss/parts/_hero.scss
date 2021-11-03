@@ -3,15 +3,34 @@
 ------------------------------------------------------------------------------*/
 .hero {
   position: relative;
-  padding: rem(70) 0;
+  padding: rem(100) rem(30);
   overflow: hidden;
 
+    &:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(37,52,67,.7);
+  }
+
+  h1 {
+    color: $white;
+    font-size: 62px;
+  }
 }
 
 
 @media screen and (max-width: $medium-breakpoint) {
   .hero {
 
+    h1 {
+      font-size: 42px;
+    }
+
+    &__row {
+      justify-content: center;
+    }
   }
 }
 

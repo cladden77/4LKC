@@ -2,7 +2,23 @@
   3 Col
 ------------------------------------------------------------------------------*/
 .three-col {
+  padding: rem(75) 0;
 
+  &__grid {
+    h3 {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  img {
+    margin-top: rem(25);
+    max-width: 50%;
+  }
+ }
 }
 
 // Media Queries

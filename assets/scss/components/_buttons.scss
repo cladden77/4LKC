@@ -46,4 +46,16 @@
       color: $primary;
     }
   }
+
+  &--outline {
+  color: $white;
+  background-color: transparent;
+  border: 2px solid $white;
+  border-radius: 10px;
+
+  &:hover {
+    color: $primary;
+    background-color: $white;
+}
+}
 }
