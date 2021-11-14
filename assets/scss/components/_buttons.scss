@@ -20,10 +20,11 @@
   &--primary {
     color: $white;
     background: $secondary;
-    background: linear-gradient($secondary, darken( $secondary, 15% ));
+    //background: linear-gradient($secondary, darken( $secondary, 15% ));
 
     &:hover {
       color: $white !important;
+      background: darken($secondary, 5%);
     }
   }
 

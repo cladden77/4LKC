@@ -1,0 +1,93 @@
+/*------------------------------------------------------------------------------
+  50/50 Cards
+------------------------------------------------------------------------------*/
+.fifty-fifty-cards {
+  padding: 0 0 rem(25);
+  overflow: hidden;
+
+  &.background {
+    padding-top: rem(150);
+    background: url('../img/section-bg-img.jpg') left top/100% auto no-repeat;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 56px;
+  }
+
+  &__content {
+    overflow: hidden;
+    border-radius: 20px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0; right: 0;
+      top: 0; bottom: 0;
+      background-color: rgba(37, 52, 67, .7);
+    }
+
+    h3 {
+      position: relative;
+      font-size: 36px;
+      color: $white;
+      padding: 150px 50px;
+    }
+  }
+
+  .button {
+    margin-top: rem(100);
+    margin-bottom: rem(50);
+  }
+
+  ul {
+    text-align: left;
+  }
+
+  img {
+    position: relative;
+  }
+}
+
+// Media Queries
+@media screen and (max-width:$medium-breakpoint) {
+  .fifty-fifty-cards {
+    &__content {
+      h3 {
+        padding: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:$small-breakpoint) {
+  .fifty-fifty-cards {
+    padding: 0 0 rem(50) 0;
+
+    &.background {
+      padding-top: rem(75);
+    }
+
+    .col-5 {
+      margin-top: rem(30);
+    }
+
+    h2 {
+      font-size: 46px;
+    }
+    &__content {
+      h3 {
+        font-size: 26px;
+        padding: 75px;
+      }
+    }
+
+  }
+}
+
+// ie11 Fixes
+.ie-11 {
+  .fifty-fifty-cards .row .col-6, .fifty-fifty .row .col-5 {
+    max-height: 450px;
+  }
+}

@@ -18,7 +18,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/logo--primary.svg" alt="4L Foundation" />
       </a>
     </div>
-    <div class="col-6 md-col-6 sm-col-6 col-no-pad sm-hide text-right col-right header__navigation-wrap">
+    <div class="col-8 md-col-6 sm-col-6 col-no-pad md-hide sm-hide text-right col-right header__navigation-wrap">
       <?php // Primary Menu
         wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'primary-nav') );
       ?>
@@ -28,7 +28,7 @@
     </div>
 
   <?php // Small Navigation ?>
-    <div class="sm-col-2 nifty-nav-wrap sm-only">
+    <div class="sm-col-2 nifty-nav-wrap lg-hide xl-hide ">
       <a href="#" id="nifty-nav-toggle"><span></span></a>
     </div>
   </div>

@@ -1360,7 +1360,7 @@ header.nifty-nav-header {
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
-	top: 0;
+	top: -22px;
 	right: 12.8px;
 }
 
@@ -2493,13 +2493,11 @@ li {
 .button--primary {
 	color: #fff;
 	background: #00A686;
-	background: -webkit-gradient(linear, left top, left bottom, from(#00A686), to(#005a48));
-	background: -o-linear-gradient(#00A686, #005a48);
-	background: linear-gradient(#00A686, #005a48);
 }
 
 .button--primary:hover {
 	color: #fff !important;
+	background: #008d71;
 }
 
 .button--secondary {
@@ -2702,7 +2700,7 @@ li {
 ------------------------------------------------------------------------------*/
 
 .fifty-fifty {
-	padding: 0 0 3.125rem;
+	padding: 6.25rem 0 3.125rem;
 	overflow: hidden;
 }
 
@@ -2711,13 +2709,21 @@ li {
 	background: url("../img/section-bg-img.jpg") left top/100% auto no-repeat;
 }
 
-.fifty-fifty h1 {
-	padding: 3.125rem 0;
-	color: #929191;
+.fifty-fifty h3 {
+	padding: 0;
+	margin-bottom: 0;
+	color: #253443;
+	font-size: 46px;
+}
+
+.fifty-fifty hr {
+	max-width: 30%;
+	border: 2px solid #FFAA00;
+	margin-left: 0;
 }
 
 .fifty-fifty .button {
-	margin-top: 6.25rem;
+	margin-top: 1.5625rem;
 	margin-bottom: 3.125rem;
 }
 
@@ -2725,7 +2731,70 @@ li {
 	text-align: left;
 }
 
+.fifty-fifty p {
+	line-height: 36px;
+}
+
 .ie-11 .fifty-fifty .row .col-6,
+.ie-11 .fifty-fifty .row .col-5 {
+	max-height: 450px;
+}
+
+/*------------------------------------------------------------------------------
+  50/50 Cards
+------------------------------------------------------------------------------*/
+
+.fifty-fifty-cards {
+	padding: 0 0 1.5625rem;
+	overflow: hidden;
+}
+
+.fifty-fifty-cards.background {
+	padding-top: 9.375rem;
+	background: url("../img/section-bg-img.jpg") left top/100% auto no-repeat;
+}
+
+.fifty-fifty-cards h2 {
+	margin-top: 0;
+	font-size: 56px;
+}
+
+.fifty-fifty-cards__content {
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.fifty-fifty-cards__content:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(37, 52, 67, 0.7);
+}
+
+.fifty-fifty-cards__content h3 {
+	position: relative;
+	font-size: 36px;
+	color: #fff;
+	padding: 150px 50px;
+}
+
+.fifty-fifty-cards .button {
+	margin-top: 6.25rem;
+	margin-bottom: 3.125rem;
+}
+
+.fifty-fifty-cards ul {
+	text-align: left;
+}
+
+.fifty-fifty-cards img {
+	position: relative;
+}
+
+.ie-11 .fifty-fifty-cards .row .col-6,
 .ie-11 .fifty-fifty .row .col-5 {
 	max-height: 450px;
 }
@@ -4070,6 +4139,10 @@ li {
 	margin: 0 auto;
 }
 
+.fifty-fifty-cards__content h3 {
+	padding: 100px;
+}
+
 .hero h1 {
 	font-size: 42px;
 }
@@ -5137,12 +5210,64 @@ li {
 	padding: 1.875rem 0;
 }
 
+.fifty-fifty h3 {
+	margin-top: 0.9375rem;
+	margin-bottom: 0.9375rem;
+	color: #253443;
+	font-size: 36px;
+}
+
+.fifty-fifty hr {
+	max-width: 50%;
+	border: 2px solid #FFAA00;
+	margin: auto;
+}
+
 .fifty-fifty.background {
 	padding-top: 4.6875rem;
 }
 
 .fifty-fifty .col-5 {
 	margin-top: 1.875rem;
+}
+
+.fifty-fifty__content {
+	-webkit-box-ordinal-group: 3;
+	-webkit-order: 2;
+	-ms-flex-order: 2;
+	order: 2;
+}
+
+.fifty-fifty__img {
+	-webkit-box-ordinal-group: 2 !important;
+	-webkit-order: 1 !important;
+	-ms-flex-order: 1 !important;
+	order: 1 !important;
+}
+
+.fifty-fifty p {
+	line-height: 34px;
+}
+
+.fifty-fifty-cards {
+	padding: 0 0 3.125rem 0;
+}
+
+.fifty-fifty-cards.background {
+	padding-top: 4.6875rem;
+}
+
+.fifty-fifty-cards .col-5 {
+	margin-top: 1.875rem;
+}
+
+.fifty-fifty-cards h2 {
+	font-size: 46px;
+}
+
+.fifty-fifty-cards__content h3 {
+	font-size: 26px;
+	padding: 75px;
 }
 
 }

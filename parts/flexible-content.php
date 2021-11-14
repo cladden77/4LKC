@@ -26,6 +26,10 @@ if( have_rows('flexible_content') ): ?>
        elseif( get_row_layout() == 'fifty_fifty' ) :
          get_template_part('parts/flexible-content/fifty-fifty');
 
+       // 50/50 Cards
+       elseif( get_row_layout() == 'fifty_fifty_cards' ) :
+         get_template_part('parts/flexible-content/fifty-fifty-cards');
+
        // 3 Column
        elseif( get_row_layout() == 'three_column' ) :
          get_template_part('parts/flexible-content/three-col');
