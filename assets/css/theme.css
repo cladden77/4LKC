@@ -2420,21 +2420,35 @@ li {
 
 .footer {
 	background: #253443;
-	padding: 40px;
+	padding: 40px 40px 10px 40px;
 	color: #fff;
 }
 
 .footer h3 {
 	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.footer hr {
+	border: 2px solid #FFAA00;
+	max-width: 100px;
+	margin-left: 0;
 }
 
 .footer__logo {
 	max-width: 12.5rem;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 .footer__logo:hover {
 	cursor: pointer;
+}
+
+.footer p {
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
 }
 
 .footer .footer-nav ul {
@@ -2457,6 +2471,32 @@ li {
 .footer--copywright h5 {
 	font-size: 16px;
 	color: #fff;
+}
+
+.footer--copywright nav.menu ul {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+
+.footer--copywright nav.menu ul li {
+	padding: 1.25rem;
+}
+
+.footer--copywright img {
+	max-width: 10%;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.footer--copywright img:hover {
+	-webkit-transform: scale(1.25);
+	-ms-transform: scale(1.25);
+	transform: scale(1.25);
 }
 
 /*----------------------------------------------------------------------------
@@ -2570,6 +2610,7 @@ li {
 .cta h2 {
 	color: #fff;
 	font-size: 62px;
+	margin-top: 5rem;
 }
 
 .cta__content-img {
@@ -2762,6 +2803,17 @@ li {
 .fifty-fifty-cards__content {
 	overflow: hidden;
 	border-radius: 20px;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.fifty-fifty-cards__content:hover {
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .fifty-fifty-cards__content:before {
@@ -4139,6 +4191,10 @@ li {
 	margin: 0 auto;
 }
 
+.cta {
+	padding-bottom: 3.125rem;
+}
+
 .fifty-fifty-cards__content h3 {
 	padding: 100px;
 }
@@ -5170,6 +5226,10 @@ li {
 .sm-col-center,
 .sm-col-centered {
 	margin: 0 auto;
+}
+
+.cta {
+	padding-bottom: 3.125rem;
 }
 
 .cta h2 {

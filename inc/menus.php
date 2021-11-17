@@ -9,6 +9,9 @@
         'mobile' => 'Mobile Menu',
         'footer'  => 'Footer Menu',
         'social'  => 'Social Menu',
+        'footer-one'  => 'Footer One Menu',
+        'footer-two'  => 'Footer Two Menu',
+        'footer-three'  => 'Footer Three Menu',
       )
     );
   }

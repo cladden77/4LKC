@@ -10,6 +10,7 @@
     background: url('../img/section-bg-img.jpg') left top/100% auto no-repeat;
   }
 
+
   h2 {
     margin-top: 0;
     font-size: 56px;
@@ -18,6 +19,12 @@
   &__content {
     overflow: hidden;
     border-radius: 20px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
 
     &:before {
       content: "";
