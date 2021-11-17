@@ -11,6 +11,7 @@
     color: $white;
     font-size: 20px;
     text-transform: uppercase;
+    white-space: nowrap;
   }
 
   hr {
@@ -82,4 +83,13 @@
       }
     }
   }
+}
+
+//Media Queries
+@media screen and (max-width: $small-breakpoint) {
+  .footer {
+  hr {
+    margin: auto;
+  }
+}
 }

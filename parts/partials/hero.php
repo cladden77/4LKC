@@ -20,10 +20,12 @@
         </h1>
       <?php endif; ?>
       <div>
+        <?php if($link) : ?>
         <a class="button button--outline hero-button" href="<?php echo $link['url']; ?>">
           <?php echo $link['title']; ?>
         </a>
       </div>
+      <?php endif; ?>
     </div>
   </div>
 </section>

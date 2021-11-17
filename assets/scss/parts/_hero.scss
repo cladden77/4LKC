@@ -20,6 +20,13 @@
   }
 }
 
+//Default Page hero
+.page-template-default {
+  .hero {
+    padding: rem(100) rem(30);
+  }
+}
+
 
 @media screen and (max-width: $medium-breakpoint) {
   .hero {

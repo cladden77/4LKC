@@ -2234,7 +2234,7 @@ li {
 	position: absolute !important;
 	padding: 0;
 	list-style: none;
-	top: 55px !important;
+	top: 48px !important;
 	left: -16px !important;
 	width: calc(100% + 120px);
 	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -2373,7 +2373,7 @@ li {
 
 .nifty-panel {
 	overflow: hidden;
-	top: 60px;
+	top: 65px;
 }
 
 .nifty-panel .button--primary {
@@ -2428,6 +2428,7 @@ li {
 	color: #fff;
 	font-size: 20px;
 	text-transform: uppercase;
+	white-space: nowrap;
 }
 
 .footer hr {
@@ -2874,6 +2875,10 @@ li {
 .hero h1 {
 	color: #fff;
 	font-size: 62px;
+}
+
+.page-template-default .hero {
+	padding: 6.25rem 1.875rem;
 }
 
 /*------------------------------------------------------------------------------
@@ -5226,6 +5231,14 @@ li {
 .sm-col-center,
 .sm-col-centered {
 	margin: 0 auto;
+}
+
+.header {
+	padding-right: 0.625rem;
+}
+
+.footer hr {
+	margin: auto;
 }
 
 .cta {
