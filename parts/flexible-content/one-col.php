@@ -3,6 +3,8 @@
 //vars
 $header = get_sub_field('header');
 $content = get_sub_field('content');
+$btnToggle = get_sub_field('button_toggle');
+$btn = get_sub_field('button');
 
 // Conditional classes/styles
 
@@ -19,6 +21,14 @@ $content = get_sub_field('content');
       <?php if($content) : ?>
         <div class="one-col__content">
           <?php echo $content; ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if( $btnToggle ) : ?>
+        <div class="text-center sm-text-center">
+          <a href="<?php echo esc_url($btn['url']); ?>" class="button button--primary" role="link" title="<?php echo $btn['title']; ?>">
+            <?php echo $btn['title']; ?>
+          </a>
         </div>
       <?php endif; ?>
     </div>

@@ -35,14 +35,14 @@ $subline = get_sub_field('subline');
         ?>
 
           <div class="col-12 sm-col-11 sm-col-centered text-center dropdown__box__bottom-text">
-          <button class="accordion">
-            <h2><?php echo $title; ?></h2>
-          </button>
+            <button class="accordion accordion-click">
+              <h5><?php echo $title; ?></h5>
+            </button>
 
-          <div class="col-12 sm-col-11 sm-col-centered text-center panel">
-            <?php echo $content; ?>
+            <div class="col-12 sm-col-11 sm-col-centered text-center panel">
+              <?php echo $content; ?>
+            </div>
           </div>
-        </div>
 
         <?php endwhile; ?>
 

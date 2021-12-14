@@ -23,7 +23,7 @@
         wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'primary-nav') );
       ?>
       <div class="sm-hide text-right header__utility-wrap">
-        <a class="nav-button" href="#">Donate</a>
+        <a class="nav-button" href="https://www.paypal.com/donate?token=XAF9I9qRZUEqqLtVusjnb-Izjm02zPouUFlAUc6PtzeabAvB8hcDr1Dq1QsjYNf1NX7QdAxIT7VzlQRC">Donate</a>
       </div>
     </div>
 

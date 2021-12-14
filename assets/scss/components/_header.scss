@@ -31,6 +31,7 @@
       color: $white;
       background-color: $secondary;
       padding: rem(50);
+      padding-bottom: rem(25);
       font-size: 24px;
       justify-content: center;
       text-align: center;
@@ -151,7 +152,7 @@
   padding: 0;
   list-style: none;
   top: 48px !important;
-  left: -16px !important;
+  //left: -16px !important;
   width: calc(100% + 120px);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
 
@@ -165,8 +166,14 @@
     display: none;
     max-width: 100%;
     position: absolute !important;
-    left: 100% !important;
-    top: 0 !important;
+    left: 0 !important;
+    top: 48px !important;
+
+    li {
+      a {
+        padding-left: rem(50) !important; 
+      }
+    }
 
     a {
       background: $white !important;

@@ -9,6 +9,8 @@ $content_header = get_sub_field('content_header');
 $content = get_sub_field('content');
 $btnToggle = get_sub_field('button_toggle');
 $btn = get_sub_field('button');
+$contentToggle = get_sub_field('content_toggle');
+$contentTwo = get_sub_field('content_two');
 
 // Conditional classes/styles
 $rowClass = $position == 'left' ? ' row--reverse' : ''; ?>
@@ -43,9 +45,18 @@ $rowClass = $position == 'left' ? ' row--reverse' : ''; ?>
           <?php endif; ?>
         </div>
 
-        <div class="col-6 sm-col-12 sm-col-centered fifty-fifty__img">
+        <?php if( $img ) : ?>
+        <div class="col-6 sm-col-12 sm-col-centered text-center fifty-fifty__img">
           <img src="<?php echo $img[0]; ?>" alt="<?php echo $alt_text; ?>" />
         </div>
+        <?php endif; ?>
+
+        <?php if( $contentToggle ) : ?>
+          <div class="col-6 sm-col-12 sm-col-centered text-left sm-text-center">
+          <?php echo $contentTwo; ?>
+          </div>
+        <?php endif; ?>
+
       </div>
     </div>
   </div>
