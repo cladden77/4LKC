@@ -65,5 +65,4 @@ $content_header_two = get_sub_field('content_header_two');
 
       <?php endif; ?>
 
-      </div>
 </section>
