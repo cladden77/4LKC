@@ -14,6 +14,10 @@ if( have_rows('flexible_content') ): ?>
        if( get_row_layout() == 'cta' ) :
          get_template_part('parts/flexible-content/cta');
 
+       // Block Quote
+       elseif( get_row_layout() == 'block_quote' ) :
+         get_template_part('parts/flexible-content/block-quote');
+
        // Dropdowns
        elseif( get_row_layout() == 'dropdowns' ) :
          get_template_part('parts/flexible-content/dropdowns');
@@ -37,6 +41,10 @@ if( have_rows('flexible_content') ): ?>
        // Padding Block
        elseif( get_row_layout() == 'padding_block' ) :
          get_template_part('parts/flexible-content/padding-block');
+
+       // Section Divider
+       elseif( get_row_layout() == 'section_divider' ) :
+         get_template_part('parts/flexible-content/section-divider');
 
        endif;
 

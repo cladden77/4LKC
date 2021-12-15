@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------------------
+  Block Quote
+------------------------------------------------------------------------------*/
+.block-quote {
+
+  h2 {
+    color: $primary;
+    font-size: 62px;
+  }
+
+ h3 {
+    color: $primary;
+    font-size: 32px;
+    font-weight: $regular !important;
+  }
+}
+
+// Media Queries
+@media screen and (max-width:$small-breakpoint) {
+  .block-quote {
+    h2 {
+      font-size: 42px;
+    }
+
+    h3 {
+       font-size: 26px;
+     }
+  }
+}
+
+// Media Queries
+@media screen and (max-width:$medium-breakpoint) {
+  .block-quote {
+
+  }
+}
