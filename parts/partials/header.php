@@ -4,8 +4,8 @@
  *
  * Template part used globaly
  *
- * @package Prelude Plus
- * @author Malkin Creative
+ * @package 4L Foundation
+ * @author Chris Ladden
  * @since 0.0.1
  */
  // Variables
@@ -23,7 +23,7 @@
         wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'primary-nav') );
       ?>
       <div class="sm-hide text-right header__utility-wrap">
-        <a class="nav-button" href="https://www.paypal.com/donate?token=XAF9I9qRZUEqqLtVusjnb-Izjm02zPouUFlAUc6PtzeabAvB8hcDr1Dq1QsjYNf1NX7QdAxIT7VzlQRC">Donate</a>
+        <a class="nav-button" href="https://www.paypal.com/donate?hosted_button_id=UN24Z83AGB388">Donate</a>
       </div>
     </div>
 
